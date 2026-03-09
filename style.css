@@ -1,0 +1,102 @@
+body {
+background-color: white;
+color: black;
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(228, 239, 247);
+    padding: 20px;
+
+
+}
+h1 {
+    color: rgb(80, 80, 124);
+    font-style: italic;
+    margin: 0;
+}
+nav {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+nav a {
+    color:black;
+    text-decoration:none;
+    margin-right: 15px;
+ }
+
+ nav a:hover {
+    color: rgb(50, 49, 49);
+    text-decoration: underline;
+ }
+ 
+ main {
+    padding: 20px;
+ }
+
+ #cta {
+    font-size: 30px;
+    margin-top: 15px;
+ }
+ p {
+    font-size: 16px;
+ }
+
+ section {
+    padding: 20px;
+ }
+
+ .service {
+    background-color: rgb(240, 250, 251);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+ }
+
+ .container div {
+    margin: 10px;
+ }
+.hero {
+   padding: 40px 30px;
+}
+.hero-text {
+   font-size: 20px;
+   margin-bottom: 15px;
+   color: rgb(80, 80, 124)
+}
+#cta {
+   font-size: 48px;
+   color: rgb(80, 80, 124);
+}
+ h2, h3, h4 {
+    margin-bottom: 10px;
+    color: rgb(50, 49, 49);
+
+ }
+
+ a:hover, button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+ }
+
+ .service:hover {
+    background-color: rgb(223, 243, 247);
+ }
+ button {
+   padding: 10px 14px;
+   background-color: rgb(80, 80, 124);
+   color: white;
+   border: none;
+ }
+
+footer {
+    background-color: rgb(89, 89, 123);
+    padding: 15px;
+    margin-top: 20px;
+    color: white;
+}
+footer:hover {
+   color: rgb(228, 239, 247);
+}
