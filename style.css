@@ -1,158 +1,165 @@
-/* Global page style */
-
 body {
     margin: 0;
-    font-family: "Georgia", serif;
-    background-color: #0a0a0a;
-    color: #e6e6e6;
+    font-family: "Times New Roman", serif;
+    background: linear-gradient(to bottom, #050505, #111111, #1a1a1a);
+    color: #f5f5f5;
 }
 
-/* Header */
-
 header {
-    background-color: #000;
+    background-color: #000000;
     text-align: center;
-    padding: 25px;
-    border-bottom: 2px solid #b30000;
+    padding: 30px 20px;
+    border-bottom: 2px solid silver;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.3rem;
-    letter-spacing: 3px;
+    font-size: 2.8rem;
+    letter-spacing: 4px;
     color: silver;
+    text-transform: uppercase;
 }
 
-/* Navigation */
-
 nav {
-    margin-top: 12px;
+    margin-top: 15px;
 }
 
 nav a {
-    color: #cfcfcf;
+    color: #f0f0f0;
     text-decoration: none;
     margin: 0 18px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     letter-spacing: 1px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: #ff2b2b;
+    color: #b3001b;
 }
-
-/* Hero section */
 
 main section {
     text-align: center;
-    padding: 90px 25px;
+    padding: 100px 20px 70px 20px;
 }
 
 #cta {
-    font-size: 2.4rem;
-    font-weight: 300;
+    font-size: 2.8rem;
+    color: white;
     margin-bottom: 20px;
-    color: silver;
+    letter-spacing: 1px;
+    font-weight: normal;
 }
 
 main p {
-    max-width: 650px;
-    margin: auto;
-    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
     line-height: 1.8;
-    color: #cfcfcf;
+    color: #d6d6d6;
 }
 
-/* Service section layout */
-
+/* service section */
 section {
     text-align: center;
     padding: 60px 20px;
 }
 
-/* Service boxes */
-
 .service {
     display: inline-block;
+    vertical-align: top;
     width: 280px;
     margin: 20px;
-    padding: 30px;
-
-    background-color: #111;
-
+    padding: 30px 20px;
+    background: linear-gradient(to bottom, #111111, #1d1d1d);
     border: 1px solid silver;
-    border-radius: 8px;
-
-    transition: all 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
-
-/* Hover effect */
 
 .service:hover {
-    border-color: #ff2b2b;
-    transform: translateY(-6px);
+    transform: translateY(-8px);
+    border-color: #b3001b;
+    box-shadow: 0 12px 28px rgba(179, 0, 27, 0.25);
 }
 
-/* Service titles */
-
 .service h3 {
-    color: #ff2b2b;
-    margin-bottom: 12px;
+    color: silver;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
     letter-spacing: 1px;
 }
 
-/* Service text */
-
 .service p {
-    color: #cfcfcf;
-    font-size: 0.95rem;
+    color: #dddddd;
     line-height: 1.6;
+    font-size: 0.97rem;
 }
 
-/* Input + Button section */
+/* optional images inside boxes */
+.service img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    border: 1px solid #444;
+}
 
+/* input + button */
 section input {
     padding: 12px;
-    width: 250px;
+    width: 260px;
+    max-width: 80%;
     border: 1px solid silver;
-    background-color: #111;
+    background-color: #0f0f0f;
     color: white;
-    border-radius: 4px;
+    border-radius: 5px;
     margin-right: 10px;
+    font-family: "Times New Roman", serif;
 }
 
 section button {
     padding: 12px 20px;
-    border: 1px solid #ff2b2b;
+    border: 1px solid #b3001b;
     background-color: transparent;
-    color: #ff2b2b;
+    color: #b3001b;
+    border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
+    font-family: "Times New Roman", serif;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
 section button:hover {
-    background-color: #ff2b2b;
+    background-color: #b3001b;
     color: white;
 }
 
-/* Footer */
-
+/* footer */
 footer {
-    background-color: #000;
+    background-color: #000000;
+    color: #d9d9d9;
     text-align: center;
-    padding: 30px;
-    border-top: 2px solid #b30000;
-    color: #bfbfbf;
+    padding: 25px;
+    border-top: 2px solid silver;
+    font-size: 0.95rem;
 }
 
-/* Mobile */
-
+/* mobile responsive */
 @media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #cta {
+        font-size: 2rem;
+    }
 
     .service {
         display: block;
-        width: 80%;
+        width: 85%;
         margin: 20px auto;
     }
 
@@ -161,5 +168,4 @@ footer {
         display: block;
         margin: 10px auto;
     }
-
 }
