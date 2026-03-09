@@ -1,26 +1,26 @@
-/* Global styling */
+/* Global page style */
 
 body {
     margin: 0;
     font-family: "Georgia", serif;
-    background-color: #0b0b0b;
-    color: #e8e8e8;
+    background-color: #0a0a0a;
+    color: #e6e6e6;
 }
 
 /* Header */
 
 header {
-    background-color: #000000;
-    padding: 25px;
+    background-color: #000;
     text-align: center;
-    border-bottom: 1px solid #444;
+    padding: 25px;
+    border-bottom: 2px solid #b30000;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     letter-spacing: 3px;
-    font-weight: 400;
+    color: silver;
 }
 
 /* Navigation */
@@ -39,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffffff;
+    color: #ff2b2b;
 }
 
 /* Hero section */
@@ -47,14 +47,13 @@ nav a:hover {
 main section {
     text-align: center;
     padding: 90px 25px;
-    border-bottom: 1px solid #1c1c1c;
 }
 
 #cta {
     font-size: 2.4rem;
     font-weight: 300;
     margin-bottom: 20px;
-    letter-spacing: 1px;
+    color: silver;
 }
 
 main p {
@@ -62,52 +61,61 @@ main p {
     margin: auto;
     font-size: 1rem;
     line-height: 1.8;
-    color: #bfbfbf;
+    color: #cfcfcf;
 }
 
-/* Services section */
+/* Service section layout */
 
 section {
-    padding: 70px 20px;
     text-align: center;
+    padding: 60px 20px;
 }
+
+/* Service boxes */
 
 .service {
     display: inline-block;
-    width: 260px;
+    width: 280px;
     margin: 20px;
-    padding: 35px 25px;
-
-    border: 1px solid #2e2e2e;
-    border-radius: 8px;
+    padding: 30px;
 
     background-color: #111;
 
-    transition: all 0.35s ease;
+    border: 1px solid silver;
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
 }
 
+/* Hover effect */
+
 .service:hover {
-    border-color: #c0c0c0;
+    border-color: #ff2b2b;
     transform: translateY(-6px);
 }
 
+/* Service titles */
+
 .service h3 {
+    color: #ff2b2b;
     margin-bottom: 12px;
-    font-weight: 400;
     letter-spacing: 1px;
 }
 
+/* Service text */
+
 .service p {
-    color: #b8b8b8;
+    color: #cfcfcf;
     font-size: 0.95rem;
+    line-height: 1.6;
 }
 
-/* CTA input section */
+/* Input + Button section */
 
 section input {
     padding: 12px;
-    width: 260px;
-    border: 1px solid #555;
+    width: 250px;
+    border: 1px solid silver;
     background-color: #111;
     color: white;
     border-radius: 4px;
@@ -116,18 +124,16 @@ section input {
 
 section button {
     padding: 12px 20px;
-    border: 1px solid #c0c0c0;
+    border: 1px solid #ff2b2b;
     background-color: transparent;
-    color: #c0c0c0;
+    color: #ff2b2b;
     cursor: pointer;
-    letter-spacing: 1px;
-
     transition: 0.3s;
 }
 
 section button:hover {
-    background-color: #c0c0c0;
-    color: #000;
+    background-color: #ff2b2b;
+    color: white;
 }
 
 /* Footer */
@@ -136,9 +142,8 @@ footer {
     background-color: #000;
     text-align: center;
     padding: 30px;
-    border-top: 1px solid #222;
-    color: #9c9c9c;
-    font-size: 0.9rem;
+    border-top: 2px solid #b30000;
+    color: #bfbfbf;
 }
 
 /* Mobile */
